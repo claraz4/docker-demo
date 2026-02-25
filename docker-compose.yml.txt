@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+ php:
+   build: ./php-app
+   ports:
+     - "8081:80"
+
+ node:
+   build: ./node-app
+   ports:
+     - "3000:3000"
+
+ react:
+   build: ./react-app
+   ports:
+     - "8080:80"
